@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../addtocardv2/image/logo.jpg">
+    <title>about us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="../addtocardv2/image/logo.jpg" alt="" srcset="" class="logo">
+            <a href="../addtocardv2/index.html" class="navanchor"><li>Home</li></a>
+            <a href="" class="navanchor"><li>About Us</li></a>
+            <a href="../services/services.html" class="navanchor" target="_blank"><li>Services</li></a>
+            <a href="" onclick="redirectToWhatsAppWeb() " class="navanchor"><li>Contact us</li></a>
+            <a href="../register/register.html" target="_blank" class="navanchor"><li>Register</li></a>
+            <div class="shopping">
+                <!-- <img src="image/shopping.svg"> -->
+                <!-- <span class="quantity">0</span> -->
+            </div>
+        </nav>
+    </header>
+    
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>
+            We are here to provide you best quality!<br>
+            So why to go somewhere else when getting a good discount!
+        </p>
+
+    </div>
+    <div class="container">
+    <section class="aboutus">
+        <div class="abtimg">
+            <img src="../addtocardv2/image/shp.jpg">
+        </div>
+        <div class="content">
+            <h2>Shopping material</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe eveniet amet molestias officia! Et maiores nemo ex adipisci sunt voluptas, cumque fugiat aut, vitae excepturi dolores. Quos consequuntur placeat nulla nesciunt, quasi sequi est architecto omnis, cupiditate asperiores voluptas, aspernatur in! Soluta quaerat dignissimos fugit quam, magnam exercitationem odio rerum quasi laboriosam a est neque optio deserunt distinctio dolores aspernatur iusto atque qui illum ipsum! Minus laborum molestias laudantium incidunt repellendus neque aliquam repellat optio, consectetur assumenda possimus enim officiis dolorum totam, magni iste. Dolores magnam illo ullam et?
+           </p>
+
+
+        </div>
+        </section>
+        </div> 
+        <script>
+            function redirectToWhatsAppWeb() {
+                var phoneNumber = "8168430617";
+                var textMessage = "Hello, I'm interested in your products. Can you provide more information?";
+                var url = "https://web.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(textMessage);
+                window.open(url);
+              }
+    
+        </script>
+</body>
+</html>

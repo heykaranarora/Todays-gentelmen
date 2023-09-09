@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan arora</title>
+    <link rel="icon" type="image/x-icon" href="../addtocardv2/image/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="rightnav">
+        <button id="myButton">X</button>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <img src="../addtocardv2/image/logo.jpg" alt="" srcset="" class="logo">
+            <a href="../addtocardv2/index.html" class="navanchor"><li>Home</li></a>
+            <a href="../about/aboutus.html" class="navanchor"><li>About Us</li></a>
+            <a href="../services/services.html" class="navanchor" target="_blank"><li>Services</li></a>
+            <a href="" onclick="redirectToWhatsAppWeb() " class="navanchor"><li>Contact us</li></a>
+            <a href="../register/register.html" target="_blank" class="navanchor"><li>Register</li></a>
+            <li class="reducePrice navanchor">Flat 10% Off </li>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1></h1>
+        <ul class="listCard">
+        </ul>
+        <div class="totaltext">Total</div>
+        <div class="total">0</div>
+        <div class="checkOut">
+            <div class="closeShopping">X</div>
+            <div class="logintobuy"><a href="../login/login.html" target="_blank" style="color: white;text-decoration: none;">Click Here To Place order </a></div>
+        </div>
+    </div>
+
+
+
+    <div id="myPopup" class="popup">
+        <p class="closePopup" id="closePopup">X</p>
+        <div class="popup-content">
+            <h1 class="h1">Subscribe to our News letter to get latest news of city of your choice</h1>
+            <div class="buttonslogin">
+			<p id="closeButton" class="login">
+                Close
+            </p>
+            <p class="login"><a href="../cwh project/html/login.html" id="anchor">
+                Subscribe
+            </a>
+        </p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<footer>
+    <div class="footer  ">
+<div class="footerdiv">
+    <ul>
+        <h4>Today's Gentelmen's</h4>
+        <li>who We Are</li>
+        <li>Join Our Team</li>
+        <li>Terms & Conditions</li>
+        <li>We Respect Your Privacy</li>
+        <li>Fees & Payments</li>
+        <li>Returns & Refunds </li>
+        <li>Policy</li>
+        <li>Promotions Terms & Conditions</li>
+    </ul>
+</div>
+<div class="footerdiv">
+    <ul>
+        <h4>Help</h4>
+        <li> Your Order</li>
+        <li>Frequently Asked Questions</li>
+        <li>Returns</li> 
+        <li>Cancellation</li>
+        <li>sPayments</li>
+        <li>Customer Care</li>
+        <li>How Do I Redeem My Coupon</li>
+    </ul>
+</div>
+<div class="footerdiv">
+    <ul>
+        <h4>Follow us</h4>
+        <li>Facebook</li>       
+        <li>Instagram </li>
+        <li>Twitter</li>      
+        <li>Pinterest</li>
+    </ul>
+</div>
+</div>
+</footer>
+    <script src="app.js"></script>
+    <script>
+const closeButton = document.getElementById('closeButton');
+
+closeButton.addEventListener('click', function() {
+  window.close();
+});
+
+
+myButton.addEventListener("click", function () {
+  myPopup.classList.add("show");
+});
+closePopup.addEventListener("click", function () {
+  myPopup.classList.remove("show");
+});
+    </script>
+</body>
+</html>

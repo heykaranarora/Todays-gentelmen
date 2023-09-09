@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Close Tab Example</title>
+</head>
+<link rel="stylesheet" href="../addtocardv2/style.css">
+<link rel="icon" type="image/x-icon" href="../addtocardv2/image/logo.jpg">
+<body>
+    <script src="../addtocardv2/app.js"></script>
+    <style>
+
+      .linkedheading{
+        width: 150px;
+        margin: auto;
+      }
+      .photo{
+        width: 500px;
+        display: block;
+        margin: auto;
+      }
+      p{
+        display: block;
+        margin: auto;
+        width: 800px;
+      }
+      
+      #goback{
+        display: block;
+        border: none;
+        font-size: 20px;
+        color: white;
+        margin: auto;
+        margin-top: 20px;
+        background-color: rgb(141, 139, 137);
+      }
+      #goback:hover{
+        cursor: pointer;
+        background-color: black;
+      }
+    </style>
+
+    <header>
+        <nav class="navbar">
+            <img src="../addtocardv2/image/logo.jpg" alt="" srcset="" class="logo">
+            <a href="../addtocardv2/index.html"  class="navanchor"><li>Home</li></a>
+            <a href="../about/aboutus.html" class="navanchor"><li>About Us</li></a>
+            <a href="../services/services.html" class="navanchor"><li>Services</li></a>
+            <a href="" onclick="redirectToWhatsAppWeb() " class="navanchor"><li>Contact us</li></a>
+            <a href="../register/register.html" target="_blank" class="navanchor"><li>Register</li></a>           
+            <div class="shopping"></div>
+        </nav>
+    </header>
+    <h1 class="linkedheading">Lorem</h1>
+    <img src="../addtocardv2/image/2.jpg" alt="" srcset="" class="photo">
+   
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod omnis explicabo magnam reiciendis odit eligendi, perferendis facilis atque, molestiae accusamus quaerat, maxime ipsa id architecto voluptatum. Repellat nesciunt odio alias!
+      </p>
+      
+
+      <button onclick="closeCurrentTab()" id="goback">Back</button>
+  <script>
+    function closeCurrentTab() {
+      window.close();
+    }
+  </script>
+</body>
+</html>
